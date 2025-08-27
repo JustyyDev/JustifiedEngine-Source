@@ -1,0 +1,56 @@
+# Build artifacts
+/build/
+/bin/
+/obj/
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.lib
+*.a
+*.dylib
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.user
+
+# Visual Studio files
+*.vcxproj*
+*.sln
+*.opensdf
+*.sdf
+*.ipch
+*.pdb
+
+# Mac OS files
+.DS_Store
+
+# Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+
+# Editor/IDE settings
+.idea/
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Engine/editor generated assets (optional, customize as needed)
+*.imported
+*.generated
+
+# Node modules (if using JS tooling)
+node_modules/
+
+# Ignore template project builds
+/templates/**/build/
