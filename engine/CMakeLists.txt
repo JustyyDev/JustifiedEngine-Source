@@ -22,5 +22,12 @@ target_include_directories(justified_engine PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/scripting
 )
 
-find_package(SDL2 REQUIRED)
-target_link_libraries(justified_engine SDL2::SDL2)
+# Replace this:
+# find_package(SDL2 REQUIRED)
+
+# Add these lines:
+set(SDL2_INCLUDE_DIR "C:/libs/SDL2/include")
+set(SDL2_LIBRARY "C:/libs/SDL2/lib/x64/SDL2.lib")
+
+include_directories(${SDL2_INCLUDE_DIR})
+target_link_libraries(justified_engine ${SDL2_LIBRARY})
